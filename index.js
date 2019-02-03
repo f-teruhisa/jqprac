@@ -1,5 +1,8 @@
 $(document).ready(function () {
-  $("button").click(function() {
-    $(".box").append("<h3>jQueryテキスト</h3>");
+  $("button:first").click(function () {
+    $(".box").slideUp(1000);
   });
+  $("button:last").click(function () {
+    $(".box").slideDown(1000);
+  })
 });
